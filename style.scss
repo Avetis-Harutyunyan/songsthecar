@@ -1,0 +1,567 @@
+// Fonts.
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    background-color: #161616;
+    color: #d1d1d1;
+}
+
+// Site's maximum length.
+.maximum_container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+// SongsTheCar site's up menu.
+header{
+    .hdr_menu_contr{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 85px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        opacity: .9;
+        transition: .5s ease;
+        .logo_contr{
+            margin-top: 5px;
+            text-align: center;
+            .logo_name{
+                opacity: .7;
+                font-size: 16px;
+            }
+            img{
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+            }
+        }
+        .hdr_stc_menubar ul li{
+            display: inline;
+            a{
+                padding: 31.7px 20px;
+                font-size: 15px;
+                transition: .2s ease;
+                text-shadow: 0 0 10px #000;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            a:hover{
+                border-bottom: 2px solid;
+                color: #a3a3a3;
+            }
+        }
+        @media screen and (max-width: 625px) {
+            .hdr_stc_menubar ul li a{
+                display: none;
+            }
+        }
+        .login_contr{   // (Sign in) submit.
+            display: flex;
+            align-items: center;
+            a{
+                padding: 32.5px 20px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                transition: .2s ease;
+            }
+            a:hover{
+                border-bottom: 2px solid;
+                color: #a3a3a3;
+            }
+            .mobile_version_bars_icon{
+                font-size: 26px;
+                cursor: pointer;
+                padding: 25px;
+                cursor: pointer;
+                transition: .2s ease;
+            }
+            .mobile_version_bars_icon:hover{
+                color: #a3a3a3;
+            }
+        }
+        @media screen and (max-width: 295px) {
+            .login_contr a{
+                display: none;
+            }
+        }
+        .mobile_version_bars_icon{
+            display: none;
+        }
+        @media screen and (max-width: 625px) {
+            .mobile_version_bars_icon{
+                display: block;
+            }
+        }
+    }
+    .hdr_menu_contr:hover{
+        opacity: 1;
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
+
+// The SongsTheCar website's about section.
+.about_section{
+    .about_container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 150px;
+        .about_left_image{
+            min-width: 645px;
+            img{
+                width: 100%;
+                border-radius: 20px;
+                padding: 10px;
+            }
+        }
+        @media screen and (max-width: 1217px) {
+            .about_left_image img{
+                max-width: 645px;
+            }
+        }
+        @media screen and (max-width: 675px) {
+            .about_left_image, img{
+                min-width: 250px;
+            }
+        }
+        @media screen and (max-width: 281px) {
+            .about_left_image, img{
+                min-width: 170px;
+            }
+        }
+        .about_ttl{
+            font-weight: 700;
+            text-align: center;
+            font-size: 25px;
+        }
+        .about_info_text{
+            margin-top: 20px;
+            margin-left: 25px;
+            line-height: 24px;
+            letter-spacing: .5px;
+            font-size: 17px;
+        }
+        @media screen and (max-width: 1260px) {
+            .about_info_text{
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width: 550px) {
+            .about_info_text{
+                font-size: 13px;
+                margin-left: 0;
+            }
+        }
+        .about_stc_contact{
+            margin-top: 20px;
+            .abt_stc_cntct1, .abt_stc_cntct2{
+                margin: 0 20px;
+                font-size: 18px;
+                i{
+                    font-size: 20px;
+                    color: #ffffff;
+                }
+                a{
+                    border-bottom: 1px solid;
+                }
+                a:hover{
+                    color: #fff;
+                }
+            }
+            @media screen and (max-width: 314px) {
+                .abt_stc_cntct1, .abt_stc_cntct2, i{
+                    font-size: 15px;
+                }
+            }
+        }
+        @media screen and (max-width: 1260px) {
+            .about_stc_contact .abt_stc_cntct1, .abt_stc_cntct2{
+                font-size: 15px;
+                i{
+                    font-size: 17px;
+                }
+            }
+        }
+        @media screen and (max-width: 585px) {
+            .about_stc_contact .abt_stc_cntct1, .abt_stc_cntct2{
+                display: block;
+                padding: 5px 0;
+                text-align: center;
+            }
+        }
+        @media screen and (max-width: 360px) {
+            .about_stc_contact, .abt_stc_cntct1, .abt_stc_cntct2, i, a{
+                font-size: 15px;
+            }
+        }
+    }
+    @media screen and (max-width: 1217px) {
+        .about_container{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 630px) {
+        .about_container{
+            text-align: start;
+        }
+    }
+}
+
+// This is videos section's.
+.videos_section{
+    .videos_container{
+        .videos_title{
+            font-size: 25px;
+            padding: 25px 0 10px;
+        }
+        .border_{
+            border: 1px solid #424242;
+            margin: 25px 0;
+        }
+        .videos_blocks{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .video{
+                margin: 15px;
+                width: 396px;
+                video{
+                    width: 100%;
+                }
+            }
+            .videos_titles{
+                padding: 10px;
+            }
+        }
+    }
+}
+
+// This is my skills section.
+.skills_section{
+    .stc_skills_contianer{
+        .skills_title{
+            font-size: 25px;
+            padding: 25px 0 10px;
+        }
+        .border_{
+            border: 1px solid #424242;
+            margin-top: 25px;
+        }
+        .skills_image{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                position: relative;
+            }
+            h3{
+                position: absolute;
+                z-index: 1;
+                background: none;
+                text-shadow: 0 0 7px #000;
+                font-size: 35px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .skills_image h3{
+                font-size: 25px;
+            }
+        }
+        @media screen and (max-width: 335px) {
+            .skills_image img{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 281px) {
+            .skills_image h3{
+                font-size: 20px;
+            }
+        }
+        .video_montage_container{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            .video_montages_info{
+                font-size: 16px;
+                line-height: 24px;
+                max-width: 500px;
+                text-align: center;
+            }
+            @media screen and (max-width: 535px) {
+                .video_montages_info{
+                    text-align: start;
+                }
+            }
+            @media screen and (max-width: 405px) {
+                .video_montages_info{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .textarea_container{
+                max-width: 500px;
+                margin-top: 25px;
+                position: relative;
+                textarea{
+                    width: 100%;
+                    min-width: 500px;
+                    min-height: 100px;
+                    max-width: 500px;
+                    max-height: 150px;
+                    padding: 15px;
+                    font-size: 17px;
+                }
+                @media screen and (max-width: 511px) {
+                    textarea{
+                        min-width: 0;
+                    }
+                }
+                .text_limit{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: #ffffff;
+                    opacity: .7;
+                    background: none;
+                    font-size: 12px;
+                    border-radius: 10px 0 0 10px;
+                    cursor: context-menu;
+                }
+                textarea::placeholder{
+                    color: #a8a8a8;
+                }
+                .textarea_submit{
+                    cursor: pointer;
+                    border: none;
+                    border: 1px solid #a3a3a3;
+                    padding: 4px 25px;
+                    font-size: 17px;
+                    font-weight: bold;
+                    transition: .2s ease;
+                }
+                .textarea_submit:hover{
+                    background-color: #a3a3a3;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.border_{
+    border: 1px solid #424242;
+    margin-top: 25px;
+}
+
+// This is the Contact section.
+.contact_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    .contact_iamge_container{
+        position: relative;
+        max-width: 650px;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+        h1{
+            position: absolute;
+            top: 50%;
+            background: none;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px #000000;
+            cursor: context-menu;
+        }
+        @media screen and (max-width: 332px) {
+            h1{
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 274px) {
+            h1{
+                font-size: 16px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .contact_iamge_container{
+            max-width: 500px;
+        }
+    }
+    .contact_input_container{
+        margin-left: 20px;
+        min-width: 500px;
+        position: relative;
+        input:nth-child(1), input:nth-child(2){
+            display: block;
+            padding: 4px 10px;
+            border: none;
+            border-bottom: 1px solid;
+            width: 100%;
+            font-size: 15px;
+            margin: 5px 0;
+        }
+        input:nth-child(1)::placeholder, input:nth-child(2)::placeholder{
+            color: #a8a8a8;
+        }
+        .contact_textarea_container{
+            position: relative;
+            textarea{
+                padding: 10px;
+                width: 100%;
+                max-width: 450px;
+                max-height: 150px;
+                min-width: 500px;
+                min-height: 100px;
+                margin-top: 15px;
+                font-size: 17px;
+            }
+            @media screen and (max-width: 534px) {
+                textarea{
+                    min-width: 0;
+                    min-height: 0;
+                }
+            }
+            .text_limit2{
+                position: absolute;
+                top: 10%;
+                right: 0;
+                color: #ffffff;
+                opacity: .7;
+                background: none;
+                font-size: 12px;
+                cursor: context-menu;
+            }
+            textarea::placeholder{
+                color: #a8a8a8;
+            }
+        }
+        input[type="submit"]{
+            cursor: pointer;
+            border: none;
+            border: 1px solid #a3a3a3;
+            padding: 4px 25px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: .2s ease;
+        }
+        input[type="submit"]:hover{
+            background-color: #a3a3a3;
+            color: #000;
+        }
+    }
+    @media screen and (max-width: 532px) {
+        .contact_input_container{
+            min-width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 868px) {
+    .contact_section{
+        flex-direction: column;
+    }
+}
+
+// this is the footer section.
+.ftr_up_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #2b2b2b;
+    .stc_logo_img img{
+        width: 200px;
+        border-radius: 50%;
+    }
+    @media screen and (max-width: 865px) {
+        .stc_logo_img img{
+            width: 150px;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        .stc_logo_img{
+            margin-bottom: 15px;
+        }
+    }
+    .social_pages{
+        .social_pages_title{
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        .social_pages{
+            margin-bottom: 15px;
+        }
+    }
+    .social_pages ul li{
+        margin: 7px 0;
+        a:hover{
+            color: #ffffff;
+        }
+    }
+    .ftr_contact_contr{
+        .ftr_contact_title{
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+    .ftr_contact_contr ul li{
+        margin: 7px 0;
+        a:hover{
+            color: #ffffff;
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .ftr_up_container{
+        flex-direction: column;
+        text-align: center;
+    }       
+}
+
+// Information, that all right reserved.
+.stc_website_reserved{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    p{
+        font-size: 17px;
+        letter-spacing: 1px;
+        margin: 7px 0;
+    }
+}
+
+// Main body's scroll.
+::-webkit-scrollbar{
+    width: 11px;
+    background: #252525;
+}
+::-webkit-scrollbar-thumb{
+    background: #adadad;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #6d6d6d;
+}

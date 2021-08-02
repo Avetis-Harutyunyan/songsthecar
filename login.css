@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  text-shadow: 0 0 7px #000;
+}
+
+.stc_login_background-image {
+  background-image: url("./login_images/stc_ligon_bg2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.stc_login_background-image .stc_registration_container .inputs_back_background {
+  background-color: #0000004f;
+  padding: 50px 70px;
+  border-radius: 30px;
+}
+.stc_login_background-image .stc_registration_container .inputs_back_background h2 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media screen and (max-height: 580px) {
+  .stc_login_background-image .stc_registration_container .inputs_back_background h2 {
+    display: none;
+  }
+  .stc_login_background-image .stc_registration_container .inputs_back_background {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-height: 484px) {
+  .stc_login_background-image .stc_registration_container .inputs_back_background {
+    padding: 0 50px;
+    background: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  .stc_login_background-image .stc_registration_container .inputs_back_background {
+    padding: 25px 0;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 220px) {
+  .stc_login_background-image .stc_registration_container .inputs_back_background h2 {
+    font-size: 20px;
+  }
+}
+.stc_login_background-image .stc_registration_container .inputs_container {
+  max-width: 350px;
+  margin-top: 40px;
+  padding: 5px;
+}
+.stc_login_background-image .stc_registration_container .inputs_container input {
+  display: block;
+  margin: 15px 0;
+  width: 100%;
+  height: 30px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding-left: 20px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+}
+.stc_login_background-image .stc_registration_container .inputs_container input::-webkit-input-placeholder {
+  color: #fff;
+}
+.stc_login_background-image .stc_registration_container .inputs_container input::-moz-placeholder {
+  color: #fff;
+}
+.stc_login_background-image .stc_registration_container .inputs_container input:-ms-input-placeholder {
+  color: #fff;
+}
+.stc_login_background-image .stc_registration_container .inputs_container input::-ms-input-placeholder {
+  color: #fff;
+}
+.stc_login_background-image .stc_registration_container .inputs_container input::placeholder {
+  color: #fff;
+}
+.stc_login_background-image .stc_registration_container .inputs_container input:focus {
+  border: none;
+}
+@media screen and (max-width: 350px) {
+  .stc_login_background-image .stc_registration_container .inputs_container input {
+    font-size: 15px;
+  }
+}
+.stc_login_background-image .stc_registration_container .enter_inputs_submits {
+  margin-top: 35px;
+}
+.stc_login_background-image .stc_registration_container .enter_inputs_submits input {
+  padding: 7px 30px;
+  cursor: pointer;
+  border: none;
+  border: 2px solid #fff;
+  background: none;
+  border-radius: 5px;
+  margin: 0 3px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.stc_login_background-image .stc_registration_container .enter_inputs_submits input:hover {
+  background: #000;
+}
+@media screen and (max-width: 365px) {
+  .stc_login_background-image .stc_registration_container .enter_inputs_submits {
+    text-align: center;
+  }
+  .stc_login_background-image .stc_registration_container .enter_inputs_submits input {
+    margin: 5px 0;
+  }
+}
+.stc_login_background-image .stc_registration_container .forgot_container {
+  margin-top: 20px;
+}
+.stc_login_background-image .stc_registration_container .forgot_container a {
+  color: #00ffff;
+  letter-spacing: 1px;
+  border-bottom: 1px solid;
+  font-size: 18px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.stc_login_background-image .stc_registration_container .forgot_container a:hover {
+  color: #fff;
+}
+@media screen and (max-width: 354px) {
+  .stc_login_background-image .stc_registration_container .forgot_container {
+    text-align: center;
+  }
+}
+.stc_login_background-image .go_back {
+  margin-top: 45px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 7px 25px;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.stc_login_background-image .go_back .to_back {
+  margin: 0 5px;
+}
+@media screen and (max-height: 655px) {
+  .stc_login_background-image .go_back {
+    margin: 0;
+  }
+}
+.stc_login_background-image .go_back:hover {
+  background: #000;
+}
