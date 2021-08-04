@@ -559,6 +559,7 @@ header .hdr_menu_contr:hover {
   margin-top: 30px;
   padding-top: 20px;
   border-top: 2px solid #2b2b2b;
+  position: relative;
 }
 .ftr_up_container .to_top_submit {
   position: absolute;
