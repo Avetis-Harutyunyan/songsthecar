@@ -560,6 +560,44 @@ header .hdr_menu_contr:hover {
   padding-top: 20px;
   border-top: 2px solid #2b2b2b;
 }
+.ftr_up_container .to_top_submit {
+  position: absolute;
+  top: 70%;
+  left: 93%;
+}
+.ftr_up_container .to_top_submit .arrow_up_sbmt {
+  color: #fff;
+  font-size: 40px;
+  padding: 10px 20px;
+}
+@media screen and (max-width: 1116px) {
+  .ftr_up_container .to_top_submit {
+    position: absolute;
+    top: 70%;
+    left: 87%;
+  }
+}
+@media screen and (max-width: 639px) {
+  .ftr_up_container .to_top_submit {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .ftr_up_container .to_top_submit {
+    position: absolute;
+    top: 65%;
+    left: 80%;
+  }
+}
+@media screen and (max-width: 385px) {
+  .ftr_up_container .to_top_submit {
+    position: absolute;
+    top: 65%;
+    left: 63%;
+  }
+}
 .ftr_up_container .stc_logo_img img {
   width: 200px;
   border-radius: 50%;
