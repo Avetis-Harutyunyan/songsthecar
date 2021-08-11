@@ -594,13 +594,13 @@ header{
 }
 
 // Main body's scroll.
-::-webkit-scrollbar{
+body::-webkit-scrollbar{
     width: 11px;
     background: #252525;
 }
-::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
     background: #adadad;
 }
-::-webkit-scrollbar-thumb:hover{
+body::-webkit-scrollbar-thumb:hover{
     background: #6d6d6d;
 }
