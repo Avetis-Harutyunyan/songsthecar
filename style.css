@@ -120,6 +120,7 @@ header .hdr_menu_contr .login_contr a::after {
   left: 0;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  z-index: 1;
 }
 header .hdr_menu_contr .login_contr a:hover::after {
   width: 100%;
