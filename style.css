@@ -36,6 +36,21 @@ header .hdr_menu_contr {
   opacity: 0.9;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  position: relative;
+}
+header .hdr_menu_contr::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #6d6d6d;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+header .hdr_menu_contr:hover::after {
+  width: 100%;
 }
 header .hdr_menu_contr .logo_contr {
   margin-top: 5px;
@@ -51,20 +66,30 @@ header .hdr_menu_contr .logo_contr img {
   border-radius: 50%;
 }
 header .hdr_menu_contr .hdr_stc_menubar ul li {
-  display: inline;
+  display: inline-block;
 }
 header .hdr_menu_contr .hdr_stc_menubar ul li a {
   padding: 31.7px 20px;
   font-size: 15px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
   text-shadow: 0 0 10px #000;
   font-weight: 600;
   letter-spacing: 1px;
+  position: relative;
 }
-header .hdr_menu_contr .hdr_stc_menubar ul li a:hover {
-  border-bottom: 2px solid;
-  color: #a3a3a3;
+header .hdr_menu_contr .hdr_stc_menubar ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #d1d1d1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+header .hdr_menu_contr .hdr_stc_menubar ul li a:hover::after {
+  width: 100%;
 }
 @media screen and (max-width: 625px) {
   header .hdr_menu_contr .hdr_stc_menubar ul li a {
@@ -83,12 +108,21 @@ header .hdr_menu_contr .login_contr a {
   padding: 32.5px 20px;
   font-weight: 600;
   letter-spacing: 1px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  position: relative;
 }
-header .hdr_menu_contr .login_contr a:hover {
-  border-bottom: 2px solid;
-  color: #a3a3a3;
+header .hdr_menu_contr .login_contr a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #d1d1d1;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+header .hdr_menu_contr .login_contr a:hover::after {
+  width: 100%;
 }
 header .hdr_menu_contr .login_contr .mobile_version_bars_icon {
   font-size: 26px;
@@ -113,10 +147,6 @@ header .hdr_menu_contr .mobile_version_bars_icon {
   header .hdr_menu_contr .mobile_version_bars_icon {
     display: block;
   }
-}
-header .hdr_menu_contr:hover {
-  opacity: 1;
-  border-bottom: 1px solid #3a3a3a;
 }
 
 .about_section .about_container {
