@@ -13,7 +13,7 @@
 
 .stc_login_background-image {
   background-image: url("./login_images/stc_ligon_bg2.jpg");
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
