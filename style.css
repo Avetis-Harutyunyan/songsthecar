@@ -12,6 +12,10 @@
   color: #d1d1d1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .maximum_container {
   max-width: 1320px;
   margin: 0 auto;
