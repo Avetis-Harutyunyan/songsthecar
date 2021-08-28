@@ -152,6 +152,46 @@ header .hdr_menu_contr .mobile_version_bars_icon {
     display: block;
   }
 }
+header .hdr_menu_contr .mobile_version_navbar ul li a {
+  padding: 7px 0;
+  display: block;
+  font-size: 18px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+header .hdr_menu_contr .mobile_version_navbar ul li a:hover {
+  margin-left: 10px;
+}
+header .hdr_menu_contr .mobile_version_navbar .login_contr_mobile_version {
+  margin-top: 7px;
+}
+header .hdr_menu_contr .mobile_version_navbar .login_contr_mobile_version a {
+  font-size: 17px;
+  display: block;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+header .hdr_menu_contr .mobile_version_navbar .login_contr_mobile_version a:hover {
+  margin-left: 10px;
+}
+header .hdr_menu_contr .mobile_version_navbar .navbar__icons {
+  margin-top: 30px;
+}
+header .hdr_menu_contr .mobile_version_navbar .navbar__icons a {
+  margin: 0 3px;
+  font-size: 25px;
+}
+header .hdr_menu_contr .mobile_version_navbar .navbar__icons a i {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+header .hdr_menu_contr .mobile_version_navbar .navbar__icons a i:hover {
+  color: #363636;
+}
+header .hdr_menu_contr .navbar-active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
 
 .about_section .about_container {
   display: -webkit-box;
