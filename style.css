@@ -149,7 +149,7 @@ header .hdr_menu_contr .mobile_version_bars_icon {
 }
 @media screen and (max-width: 625px) {
   header .hdr_menu_contr .mobile_version_bars_icon {
-    display: block;
+    display: none;
   }
 }
 header .hdr_menu_contr .mobile_version_navbar ul li a {
