@@ -152,6 +152,23 @@ header .hdr_menu_contr .mobile_version_bars_icon {
     display: none;
   }
 }
+header .hdr_menu_contr .mobile_version_navbar {
+  position: fixed;
+  top: 85px;
+  right: 0;
+  width: 270px;
+  max-width: 100%;
+  height: 100%;
+  background-color: #161616;
+  z-index: 1500;
+  padding: 10px;
+  -webkit-box-shadow: 0 5px 5px #6d6d6d;
+          box-shadow: 0 5px 5px #6d6d6d;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
 header .hdr_menu_contr .mobile_version_navbar ul li a {
   padding: 7px 0;
   display: block;
