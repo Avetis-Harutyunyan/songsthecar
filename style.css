@@ -164,8 +164,8 @@ header .hdr_menu_contr .mobile_version_navbar {
   padding: 10px;
   -webkit-box-shadow: 0 5px 5px #6d6d6d;
           box-shadow: 0 5px 5px #6d6d6d;
-  -webkit-transform: translateX(102%);
-          transform: translateX(102%);
+  -webkit-transform: perspective(1200px) rotateY(-90deg);
+          transform: perspective(1200px) rotateY(-90deg);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
