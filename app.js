@@ -4,6 +4,7 @@ const navSlide = () => {
 
     bars.addEventListener('click', () => {
         nav.classList.toggle('navbar-active');
+        bars.classList.toggle('diagnol');
     });
 }
 
