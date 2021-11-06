@@ -239,8 +239,8 @@ header .hdr_menu_contr .navbar-active {
 
 .toTop__btn {
   position: fixed;
-  top: 90%;
-  right: 3%;
+  top: 87%;
+  right: 4%;
   z-index: 1;
   display: none;
 }
