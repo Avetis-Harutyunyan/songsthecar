@@ -237,6 +237,23 @@ header .hdr_menu_contr .navbar-active {
           transform: translateX(0);
 }
 
+.toTop__btn {
+  position: fixed;
+  top: 90%;
+  right: 3%;
+  z-index: 1;
+  display: none;
+}
+.toTop__btn a {
+  font-size: 35px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.toTop__btn.active {
+  display: block;
+}
+
 .about_section .about_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -691,45 +708,6 @@ header .hdr_menu_contr .navbar-active {
   padding-top: 20px;
   border-top: 2px solid #2b2b2b;
   position: relative;
-}
-.ftr_up_container .to_top_submit {
-  position: absolute;
-  top: 70%;
-  left: 93%;
-}
-.ftr_up_container .to_top_submit .arrow_up_sbmt {
-  color: #ffffff;
-  font-size: 40px;
-  padding: 10px 20px;
-  background: none;
-}
-@media screen and (max-width: 1116px) {
-  .ftr_up_container .to_top_submit {
-    position: absolute;
-    top: 70%;
-    left: 87%;
-  }
-}
-@media screen and (max-width: 639px) {
-  .ftr_up_container .to_top_submit {
-    position: absolute;
-    top: 90%;
-    left: 80%;
-  }
-}
-@media screen and (max-width: 414px) {
-  .ftr_up_container .to_top_submit {
-    position: absolute;
-    top: 65%;
-    left: 80%;
-  }
-}
-@media screen and (max-width: 385px) {
-  .ftr_up_container .to_top_submit {
-    position: absolute;
-    top: 65%;
-    left: 63%;
-  }
 }
 .ftr_up_container .stc_logo_img img {
   width: 200px;
