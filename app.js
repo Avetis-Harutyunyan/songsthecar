@@ -9,3 +9,9 @@ const navSlide = () => {
 }
 
 navSlide();
+
+// for scroll
+window.addEventListener("scroll", function() {
+    const toTop = document.querySelector(".toTop__btn");
+    toTop.classList.toggle("active", scrollY > 450);
+});
