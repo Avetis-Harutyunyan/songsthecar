@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #c0c0c0;
 }
 body.active {
-  margin-left: -300px;
+  margin-left: -200px;
 }
 
 .container {
