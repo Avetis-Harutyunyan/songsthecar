@@ -217,7 +217,7 @@ body.active {
 
 .toTop {
   position: fixed;
-  top: 80%;
+  top: 85%;
   right: 2%;
   z-index: 555;
   display: none;
