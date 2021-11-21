@@ -9,7 +9,19 @@ function navSide() {
         bars.classList.toggle("close");
 
         // body to left
-        bodyLeft.classList.toggle("active");
+        bodyLeft.classList.toggle("left");
     });
 }
 navSide();
+
+
+function nightAndLight() {
+    const bulb = document.querySelector(".light_and_dark");
+    const body = document.querySelector("body");
+
+    bulb.addEventListener("click", function() {
+        bulb.classList.toggle("active");
+        body.classList.toggle("light");
+    });
+}
+nightAndLight();
