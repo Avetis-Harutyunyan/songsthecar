@@ -15,7 +15,7 @@ function navSide() {
 navSide();
 
 
-function nightAndLight() {
+function darkMode() {
     const bulb = document.querySelector(".light_and_dark");
     const body = document.querySelector("body");
 
@@ -24,4 +24,4 @@ function nightAndLight() {
         body.classList.toggle("light");
     });
 }
-nightAndLight();
+darkMode();
