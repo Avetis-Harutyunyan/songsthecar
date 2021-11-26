@@ -365,7 +365,7 @@ body.light {
   top: 110%;
   right: 1.7%;
   z-index: 555;
-  webkit-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .toTop a {
