@@ -362,10 +362,11 @@ body.light {
 
 .toTop {
   position: fixed;
-  top: 88%;
+  top: 110%;
   right: 1.7%;
   z-index: 555;
-  display: none;
+  webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .toTop a {
   background-color: #00645c;
@@ -380,7 +381,8 @@ body.light {
   background-color: #041b19;
 }
 .toTop.active {
-  display: block;
+  position: fixed;
+  top: 88%;
 }
 
 /* ------- about section ------- */
