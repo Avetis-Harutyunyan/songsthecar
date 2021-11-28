@@ -10,6 +10,10 @@
   list-style: none;
 }
 
+::selection {
+    background-color: #005551;
+}
+
 html {
   scroll-behavior: smooth;
 }
