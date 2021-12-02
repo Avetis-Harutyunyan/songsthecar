@@ -11,6 +11,10 @@
   list-style: none;
 }
 
+::selection{
+    background-color: #256e6a;
+}
+
 html {
   scroll-behavior: smooth;
 }
