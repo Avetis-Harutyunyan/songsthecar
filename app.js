@@ -16,7 +16,7 @@ navSide();
 
 
 function darkMode() {
-    const bulb = document.querySelector(".light_and_dark");
+    const bulb = document.querySelector(".darkMode");
     const body = document.querySelector("body");
 
     bulb.addEventListener("click", function() {
