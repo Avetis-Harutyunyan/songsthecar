@@ -447,10 +447,11 @@ body.light {
 
 .toTop {
   position: fixed;
-  top: 88%;
+  top: 120%;
   right: 1.7%;
   z-index: 555;
-  display: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .toTop a {
@@ -468,7 +469,8 @@ body.light {
 }
 
 .toTop.active {
-  display: block;
+  position: fixed;
+  top: 88%;
 }
 
 /* ------- about section ------- */
