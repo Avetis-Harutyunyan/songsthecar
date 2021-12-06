@@ -20,7 +20,6 @@ function darkMode() {
     const body = document.querySelector("body");
 
     bulb.addEventListener("click", function() {
-        bulb.classList.toggle("active");
         body.classList.toggle("light");
     });
 }
