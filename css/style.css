@@ -300,9 +300,12 @@ body.light {
 }
 
 .header__navbar .nav-links ul .darkMode {
-  margin-left: 100px;
+  margin-left: 50px;
   font-size: 27px;
   cursor: pointer;
+  background: none;
+  border: none;
+  color: #ffffff;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   padding: 7px 20px;
