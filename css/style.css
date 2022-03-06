@@ -770,16 +770,7 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .content__blocks .content__text_block {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .content__blocks .content__text_block .watching {
-    margin: 30px auto;
+    row-gap: 50px;
   }
   .content__blocks .content__image_block {
     max-width: 100%;

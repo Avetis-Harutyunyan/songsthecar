@@ -806,14 +806,7 @@ body {
     }
     .content__blocks {
         flex-direction: column;
-        align-items: center;
-        .content__text_block {
-            text-align: center;
-            margin: 0 auto;
-            .watching {
-                margin: 30px auto;
-            }
-        }
+        row-gap: 50px;
 
         .content__image_block {
             max-width: 100%;
