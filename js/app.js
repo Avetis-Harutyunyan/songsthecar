@@ -1,26 +1,33 @@
+// menu nav
 function navSide() {
-    const bars = document.querySelector("#burger");
-    const nav = document.querySelector("#navSide");
-    const bodyLeft = document.querySelector("body");
+    const bars = document.getElementById("burger");
+    const nav = document.getElementById("navside");
+    const closeBtn = document.getElementById("close__btn");
 
-    bars.addEventListener("click", function() {
-        nav.classList.toggle("nav-active");
-        // burger animation
-        bars.classList.toggle("close");
+    bars.addEventListener("click", () => {
+        nav.classList.add("nav-active");
+    });
 
-        // body to left
-        bodyLeft.classList.toggle("left");
+    closeBtn.addEventListener("click", () => {
+        nav.classList.remove("nav-active");
+    });
+
+    document.addEventListener("mouseup", (e) => {
+        if (e.target !== closeBtn && e.target !== nav) {
+            nav.classList.remove("nav-active");
+        }
     });
 }
 navSide();
 
-
-function darkMode() {
-    const bulb = document.querySelector(".darkMode");
+// dark & light
+function lightMode() {
+    const toLightBtn = document.getElementById("icon_btn");
     const body = document.querySelector("body");
 
-    bulb.addEventListener("click", function() {
+    toLightBtn.addEventListener("click", () => {
         body.classList.toggle("light");
     });
 }
-darkMode();
+
+lightMode();

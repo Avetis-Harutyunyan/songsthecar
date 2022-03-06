@@ -1,7 +1,7 @@
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", () => {
     const topNav = document.querySelector(".header__section");
-    topNav.classList.toggle("topNav", window.scrollY > 90);
+    topNav.classList.toggle("topNav-active", scrollY > 70);
 
-    const toTop = document.querySelector(".toTop");
-    toTop.classList.toggle("active", window.scrollY > 250);
+    const toTopBtn = document.querySelector(".toUpBtn");
+    toTopBtn.classList.toggle("toUpBtn-active", scrollY > 600);
 });
