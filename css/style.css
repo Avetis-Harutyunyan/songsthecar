@@ -16,10 +16,12 @@ html {
 
 ::-moz-selection {
   background-color: #007eb0;
+  color: #ffffff;
 }
 
 ::selection {
   background-color: #007eb0;
+  color: #ffffff;
 }
 
 body {
