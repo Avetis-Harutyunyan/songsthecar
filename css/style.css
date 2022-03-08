@@ -16,12 +16,12 @@ html {
 
 ::-moz-selection {
   background-color: #007eb0;
-  color: #ffffff;
+  color: white;
 }
 
 ::selection {
   background-color: #007eb0;
-  color: #ffffff;
+  color: white;
 }
 
 body {
@@ -364,7 +364,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .content__blocks .content__text_block .watching {
   margin-top: 40px;
-  max-width: 185px;
+  max-width: 250px;
 }
 .content__blocks .content__text_block .watching a {
   display: -webkit-box;
