@@ -29,5 +29,19 @@ function lightMode() {
         body.classList.toggle("light");
     });
 }
-
 lightMode();
+
+
+function menuSelect() {
+    const navList = document.querySelector(".nav_list");
+    const navLink = document.querySelectorAll(".nav_link");
+
+    navLink.forEach((item) => {
+        item.addEventListener("click", () => {
+            navList.querySelector(".active").classList.remove("active");
+
+            item.classList.add("active");
+        });
+    });
+}
+menuSelect();
