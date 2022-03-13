@@ -1,8 +1,8 @@
 // menu nav
 function navSide() {
-    const bars = document.getElementById("burger");
-    const nav = document.getElementById("navside");
-    const closeBtn = document.getElementById("close__btn");
+    const bars = document.getElementById("burger"),
+          nav = document.getElementById("navside"),
+          closeBtn = document.getElementById("close__btn");
 
     bars.addEventListener("click", () => {
         nav.classList.add("nav-active");
@@ -22,8 +22,8 @@ navSide();
 
 // dark & light
 function lightMode() {
-    const toLightBtn = document.getElementById("icon_btn");
-    const body = document.querySelector("body");
+    const toLightBtn = document.getElementById("icon_btn"),
+          body = document.querySelector("body");
 
     toLightBtn.addEventListener("click", () => {
         body.classList.toggle("light");
@@ -33,8 +33,8 @@ lightMode();
 
 
 function menuSelect() {
-    const navList = document.querySelector(".nav_list");
-    const navLink = document.querySelectorAll(".nav_link");
+    const navList = document.querySelector(".nav_list"),
+          navLink = document.querySelectorAll(".nav_link");
 
     navLink.forEach((item) => {
         item.addEventListener("click", () => {

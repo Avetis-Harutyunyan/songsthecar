@@ -82,6 +82,10 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
 }
 .light .header__navbar .nav-links ul li a::after {
+  background-color: #838383;
+}
+.light .header__navbar .nav-links ul li a:hover::after {
+  width: 100%;
   background-color: #1a1a1a;
 }
 .light .header__navbar .color_theme_icon .icon_btn {
@@ -778,12 +782,8 @@ body::-webkit-scrollbar-thumb:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .content__blocks .content__text_block {
-    text-align: center;
-    margin: 0 auto;
-  }
   .content__blocks .content__text_block .watching {
-    margin: 30px auto;
+    max-width: 220px;
   }
   .content__blocks .content__image_block {
     max-width: 100%;
