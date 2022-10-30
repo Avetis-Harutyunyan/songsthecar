@@ -23,10 +23,32 @@ navSide();
 // dark & light
 function lightMode() {
     const toLightBtn = document.getElementById("icon_btn");
-    const body = document.querySelector("body");
+    const body = document.body;
+
+    let localTheme = localStorage.getItem("light");
+
+    if(localTheme === "enabled") {
+        body.classList.add("light");
+    } else {
+        body.classList.remove("light");
+    }
 
     toLightBtn.addEventListener("click", () => {
-        body.classList.toggle("light");
+        if(!body.classList.contains("light")) {
+            body.classList.add("light");
+            localStorage.setItem("light", "enabled");
+        } else {
+            body.classList.remove("light");
+            localStorage.setItem("light", "disabled");
+        }
+
+        localTheme = localStorage.getItem("light");
+
+        if(localTheme === "enabled") {
+            body.classList.add("light");
+        } else {
+            body.classList.remove("light");
+        }
     });
 }
 lightMode();
